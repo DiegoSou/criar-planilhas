@@ -18,7 +18,7 @@ for n in range(1, n_columns+1):
         
         while keep_moving:
             col_definition['choices'].append(input('Adicionando opção: '))
-            keep_moving = False if input('Sair (S/N)? ') == 'S' else True
+            keep_moving = False if input('Sair (S/N)? ').lower() == 's' else True
 
     columns.append(col_definition)
 
